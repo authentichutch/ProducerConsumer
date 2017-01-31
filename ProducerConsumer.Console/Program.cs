@@ -36,7 +36,7 @@ namespace ProducerConsumer.Console
             BlockingProducer producer = new BlockingProducer(10, 10);
             BlockingConsumer consumer = new BlockingConsumer(10);
 
-            ConcurrentQueue<string> buffer = new ConcurrentQueue<string>(); //unbounded buffer - block while empty
+            ConcurrentQueue<string> buffer = new ConcurrentQueue<string>(); //unbounded buffer 
 
             QueueingDataController controller = new QueueingDataController(producer, consumer, buffer);
           
